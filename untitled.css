@@ -32,7 +32,7 @@
   width: 95%;
 }
 
-p, li, a{
+p, li, .list a{
 	color: white;
 	font-family: Lato, Consolas;
 	font-weight: 300;
@@ -63,13 +63,13 @@ p, li, a{
   padding: 0;
 }
 
-a{
+.list a{
 	text-decoration: none;
 	display: block;
 	padding: 3px;
 }
 
-a:hover{
+.list a:hover{
 	color: white;
   opacity: .8;
   background-color: black;
