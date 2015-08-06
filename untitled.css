@@ -15,8 +15,23 @@
   text-align: center;
 }
 
+#by {
+  position: fixed;
+  text-align: center;
+  bottom: -17px;
+  width: 100%;
+  color: #919191;
+  background-color: inherit;
+}
+
+.rule {
+  border-color: #fd7070;
+  background-color: #fd7070;
+  width: 95%;"
+}
+
 p, li, a{
-	color: #fd7070;
+	color: white;
 	font-family: Lato, Consolas;
 	font-weight: 300;
 	letter-spacing:2px;
@@ -34,6 +49,11 @@ p, li, a{
 .favorites p{
 	border-bottom: 1px solid #fd7070;
 	padding-right: 100%;
+}
+
+.bang li{
+  color: #989897;
+  text-align: left;
 }
 
 .list{
@@ -55,7 +75,7 @@ a{
 
 a:hover{
 	color: #222;
-	background: #fd7070;
+	background: #1cfc03;
 }
 
 
@@ -104,8 +124,4 @@ a:hover{
 #search input:focus
 {
 	outline: none;
-  /*text-align: center ;
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 0 8px #4f4f4f;
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 0 8px #4f4f4f;
-	box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 0 12px #4f4f4f;*/
 }
