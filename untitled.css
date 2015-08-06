@@ -5,7 +5,7 @@
 #logo {
   width: 115px;
   height: auto;
-  margin-left: -65px;
+  margin-left: -120px;
 }
 
 #bar {
@@ -13,21 +13,23 @@
   margin-top: 5%;
   width: 100%;
   text-align: center;
+  /*background-color: inherit;*/
 }
 
 #by {
   position: fixed;
   text-align: center;
   bottom: -17px;
+  z-index: 0;
   width: 100%;
   color: #919191;
-  background-color: inherit;
+  /*background-color: inherit;*/
 }
 
 .rule {
   border-color: #fd7070;
   background-color: #fd7070;
-  width: 95%;"
+  width: 95%;
 }
 
 p, li, a{
@@ -41,14 +43,9 @@ p, li, a{
 	Favorite
 */
 .favorites{
-	width: 90%;
-	margin: 10px auto 0 auto;
+	width: 80%;
+	margin:  auto;
 	text-align: center;
-}
-
-.favorites p{
-	border-bottom: 1px solid #fd7070;
-	padding-right: 100%;
 }
 
 .bang li{
@@ -74,10 +71,27 @@ a{
 }
 
 a:hover{
-	color: #222;
-	background: #1cfc03;
+	color: white;
+  opacity: .4;
 }
 
+.colourCol {
+  position: fixed;
+  width: 15%;
+  height: 120%;
+  z-index: -1;
+  margin-top: -45%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9e0e0e;
+  background-position:center;
+
+}
+
+.devList {
+  position: relative;
+  z-index: 7;
+}
 
 .search
 {
@@ -104,6 +118,7 @@ a:hover{
 {
 	font-family: "ff-meta-web-1", "ff-meta-web-2",Consolas;
   display: inline-block;
+  margin-left: -12px;
 }
 
 #search input
