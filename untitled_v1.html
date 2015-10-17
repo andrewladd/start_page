@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Tab</title>
+    <link href="untitled_v1.css" rel="stylesheet" type="text/css">
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="jquery-2.1.4.js" language="javascript" type="text/javascript" ></script>
+
+</head>
+
+<body>
+
+    <div id="bar">
+        <a href="http://andrewladd.co"><img id="logo" src="img/AisforAndrew.png"/></a>
+
+        <form method="get" id="search" action="http://duckduckgo.com/">
+            <input type="hidden" name="kl" value="ca-en"/>  <!-- region -->
+            <input type="hidden" name="ka" value="e"/>
+            <input type="hidden" name="k7" value="#383C45"/>
+            <input type="hidden" name="kj" value="#9e0e0e"/>
+            <input type="hidden" name="ky" value="#4F545F"/>
+            <input type="hidden" name="kx" value="white"/>
+            <input type="hidden" name="kt" value="Helvetica"/>
+            <input type="hidden" name="kp" value="-1"/>
+            <input type="hidden" name="kz" value="-1"/>
+            <input type="hidden" name="kh" value="1"/>
+            <input type="hidden" name="km" value="l"/>
+            <input type="hidden" name="kw" value="s"/>
+            <input type="hidden" name="k1" value="-1"/>
+            <input type="text" name="q" maxlength="255" placeholder="All work and no play makes Andrew a dull boy." autofocus="true"/>
+            <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+        </form>
+    </div>
+
+
+    <ul class="container">
+        <li><a class="parent" href="#">Social</a>
+            <ul class="submenu">
+                <li><a class='tab' href='https://www.linkedin.com'>Linkedin</a></li>
+                <li><a class='tab' href='http://www.messenger.com'>Messenger</a></li>
+                <li><a class="tab" href="http://www.reddit.com/r/all">Reddit</a></li>
+            </ul>
+        </li>
+
+        <li><a class="parent" href="#">Dev</a>
+            <ul class="submenu">
+                <li><a class="tab" href="http://www.github.com">Github</a></li>
+                <li><a class='tab' href='http://www.codewars.com/dashboard'>Code Wars</a></li>
+                <li><a class="tab" href="http://www.stackoverflow.com">Stack Overflow</a></li>
+                <li><a class="tab" href='http://codepen.io'>CodePen</a></li>
+                <li><a class="tab" href='http://www.webdesignrepo.com'>Web Dev Repo</a></li>
+            </ul>
+        </li>
+
+        <li><a class="parent" href="#">Academia</a>
+            <ul class="submenu">
+                <li><a class='tab' href='https://learn.uwaterloo.ca/d2l/home'>LEARN</a></li>
+                <li><a class='tab' href='https://www.nexusmail.uwaterloo.ca/horde_3.3.5/'>myWaterloo</a></li>
+                <li><a class="tab" href="http://www.wolframalpha.com/">Wolfram Alpha</a></li>
+                <li><a class="tab" href="https://www.desmos.com/calculator/">Desmos</a></li>
+            </ul>
+        </li>
+
+        <li><a class="parent" href="#">Misc</a>
+            <ul class="submenu">
+                <li><a class='tab' href='http://www.bmo.com/main/personal'>BMO</a></li>
+                <li><a class="tab" href="http://www.netflix.com">Netflix</a></li>
+                <li><a class="tab" href="http://www.wallbase.cc">Wallbase</a></li>
+                <li><a class="tab" href="http://qrohlf.com/trianglify/">Trianglify</a></li>
+                <li><a class="tab" href="http://hastebin.com">Hastebin</a></li>
+                <li><a class="tab" href="http://pastebin.com">Pastebin</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+    $('.submenu').hide();
+    $("li:has(ul)").click(function(){
+    $("ul",this).slideToggle('300');
+    });
+    </script>
+
+</body>
+</html>
