@@ -4,7 +4,7 @@ html {
 
 body {
     /*background: url('homepage.png');*/
-    background-color: #383C45;
+    background-color: #951919/*383C45*/;
     font-family: "Consolas";
 }
 
@@ -20,9 +20,9 @@ body {
 }
 
 #bar {
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     margin-top: 3%;
-    width: auto;
+    /*width: auto;*/
     text-align: center;
     /*background-color: inherit;*/
 }
@@ -78,7 +78,7 @@ ul.submenu {
 }
 
 
-a.tab {
+.tab {
     display: block;
     padding: 10px;
     color: #EEE;
@@ -87,7 +87,7 @@ a.tab {
     opacity: .5;
 }
 
-a.parent {
+.parent {
     display: block;
     padding: 10px;
     color: #555;
@@ -104,6 +104,6 @@ a:hover {
 }
  
 
-a.tab {transition: all .3s ease;}
+.tab {transition: all .3s ease;}
 a.tab:hover {transition: all .3s ease;text-indent: 5px;opacity: 1; }
-ul > li:hover > a.parent {transition: all .3s ease;opacity: .8;}
+li:hover > .parent {transition: all .3s ease;opacity: .8;}

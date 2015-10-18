@@ -2,17 +2,19 @@
 <html>
 
 <head>
-    <title>New Tab</title>
+    <title>Home Tab</title>
     <link href="untitled_v1.css" rel="stylesheet" type="text/css">
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
-    <script src="jquery-2.1.4.js" language="javascript" type="text/javascript" ></script>
+    <script src="public/jquery-2.1.4.js" language="javascript" type="text/javascript" ></script>
+    <script src="public/bootstrap-3"></script>
+    <link rel="stylesheet" href="public/font-awesome-4.4.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
     <div id="bar">
-        <a href="http://andrewladd.co"><img id="logo" src="img/AisforAndrew.png"/></a>
+        <a href="http://andrewladd.co"><img id="logo" src="public/img/AisforAndrew.png"/></a>
 
         <form method="get" id="search" action="http://duckduckgo.com/">
             <input type="hidden" name="kl" value="ca-en"/>  <!-- region -->
@@ -35,7 +37,16 @@
 
 
     <ul class="container">
-        <li><a class="parent" href="#">Social</a>
+        
+        <li><a class="parent" href="#"><i class="fa fa-newspaper-o"></i>&nbsp;News</a>
+            <ul class="submenu">
+                <li><a class='tab' href='' ></a></li>
+                <li><a class='tab' href=''></a></li>
+                <li><a class='tab' href=''></a></li>
+            </ul>
+        </li>
+
+        <li><a class="parent" href="#"><i class="fa fa-users"></i>&nbsp;Social</a>
             <ul class="submenu">
                 <li><a class='tab' href='https://www.linkedin.com'>Linkedin</a></li>
                 <li><a class='tab' href='http://www.messenger.com'>Messenger</a></li>
@@ -43,7 +54,7 @@
             </ul>
         </li>
 
-        <li><a class="parent" href="#">Dev</a>
+        <li><a class="parent" href="#"><i class="fa fa-laptop fa-fw"></i>&nbsp;Dev</a>
             <ul class="submenu">
                 <li><a class="tab" href="http://www.github.com">Github</a></li>
                 <li><a class='tab' href='http://www.codewars.com/dashboard'>Code Wars</a></li>
@@ -53,7 +64,7 @@
             </ul>
         </li>
 
-        <li><a class="parent" href="#">Academia</a>
+        <li><a class="parent" href="#"><i class="fa fa-book fa-fw"></i>&nbsp;Academia</a>
             <ul class="submenu">
                 <li><a class='tab' href='https://learn.uwaterloo.ca/d2l/home'>LEARN</a></li>
                 <li><a class='tab' href='https://www.nexusmail.uwaterloo.ca/horde_3.3.5/'>myWaterloo</a></li>
@@ -62,7 +73,15 @@
             </ul>
         </li>
 
-        <li><a class="parent" href="#">Misc</a>
+        <li><a class="parent" href="#"><i class="fa fa-wrench"></i>&nbsp;Tools</a>
+            <ul class="submenu">
+                <li><a class='tab' href='' ></a></li>
+                <li><a class='tab' href=''></a></li>
+                <li><a class='tab' href=''></a></li>
+            </ul>
+        </li>
+
+        <li><a class="parent" href="#"><i class="fa fa-archive"></i>&nbsp;Misc</a>
             <ul class="submenu">
                 <li><a class='tab' href='http://www.bmo.com/main/personal'>BMO</a></li>
                 <li><a class="tab" href="http://www.netflix.com">Netflix</a></li>
@@ -70,6 +89,13 @@
                 <li><a class="tab" href="http://qrohlf.com/trianglify/">Trianglify</a></li>
                 <li><a class="tab" href="http://hastebin.com">Hastebin</a></li>
                 <li><a class="tab" href="http://pastebin.com">Pastebin</a></li>
+            </ul>
+        </li>
+
+        <li><a class='parent' href='#'><i class="fa fa-hand-peace-o"></i>&nbsp;About</a>
+            <ul class="submenu">
+                <li><a class='tab' href='http://andrewladd.co' target='blank'>by andrew, with purpose</a></li>
+                <li class='tab'><i class="fa fa-copyright"></i>&nbsp;2015</li>
             </ul>
         </li>
     </ul>
